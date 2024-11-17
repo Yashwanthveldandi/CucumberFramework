@@ -1,0 +1,17 @@
+ChromeOptions browserOptions = new ChromeOptions();
+browserOptions.setPlatformName("Windows 10");
+browserOptions.setBrowserVersion("118.0");
+HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+ltOptions.put("username", "Your LambdaTest Username");
+ltOptions.put("accessKey", "Your LambdaTest Access Key");
+ltOptions.put("geoLocation", "IN");
+ltOptions.put("visual", true);
+ltOptions.put("video", true);
+ltOptions.put("timezone", "Kolkata");
+ltOptions.put("build", "SeleniumTest");
+ltOptions.put("project", "firstTest");
+ltOptions.put("tunnel", true);
+ltOptions.put("networkThrottling", "Regular 4G");
+ltOptions.put("selenium_version", "4.0.0");
+ltOptions.put("w3c", true);
+browserOptions.setCapability("LT:Options", ltOptions);
